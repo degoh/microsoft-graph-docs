@@ -16,6 +16,7 @@ After Microsoft Graph accepts the subscription request, it pushes notifications 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
 - Messages
+- chatMessages
 - Events
 - Contacts
 - Users
@@ -44,6 +45,8 @@ Or to a user's personal OneDrive:
 Or to a new [Security API alert](security-concept-overview.md):
 `/security/alerts?$filter=status eq ‘New’`,
 `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+
+Or on Microsoft Teams with admin permissions you can access tenant wide data for both channel and chat messages. The teams message is called "chatMessage" and is different from Message (email) `/teams/all/channels/all/chatMessages /user/all/chat/all/chatMessages
 
 ### Azure AD resource limitations
 
